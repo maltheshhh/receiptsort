@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>receiptsort</title>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+body{margin:0}
+a{color:#2B3FD6}a:hover{color:#1B2A9A}
+</style>
+
+<style>html{scroll-behavior:smooth}</style>
+</head>
+<body>
+
+
+<div style="background: #EEF1EC; color: #101814; font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 17px; line-height: 1.55; display: flex; flex-direction: column">
+
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 24px 64px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 20px; letter-spacing: -0.01em">receiptsort</div>
+<div style="display: flex; flex-wrap: wrap; gap: 28px; font-size: 15px; font-weight: 500">
+<a href="#output" style="color: #101814; text-decoration: none">Output</a>
+<a href="#why" style="color: #101814; text-decoration: none">Why local</a>
+<a href="#start" style="color: #101814; text-decoration: none">Quickstart</a>
+<a href="#pricing" style="color: #101814; text-decoration: none">Pricing</a>
+</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 56px; padding: 56px 64px 88px; max-width: 1280px; box-sizing: border-box; align-self: center; width: 100%">
+<div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #4A5750">Open-weight model · runs offline · no per-receipt fee</div>
+<h1 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 68px; line-height: 1.02; letter-spacing: -0.03em; text-wrap: balance">Sort your receipts without sending them anywhere.</h1>
+<p style="margin: 0; max-width: 520px; font-size: 19px; color: #2C3832">receiptsort reads receipts and invoices with a vision model running on your own computer. It files each one by month and category and hands your accountant a clean ledger.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px">
+<a href="#start" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; background: #2B3FD6; color: #FFFFFF; font-weight: 600; text-decoration: none; border-radius: 4px">Run it in 3 commands</a>
+<a href="#output" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border: 2px solid #101814; color: #101814; font-weight: 600; text-decoration: none; border-radius: 4px">See the output</a>
+</div>
+</div>
+
+<div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+<div style="align-self: flex-start; width: 270px; max-width: 100%; box-sizing: border-box; background: #FFFFFF; padding: 22px 22px 26px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; line-height: 1.7; transform: rotate(-1.5deg); box-shadow: 0 1px 0 #C9D1CA, 0 12px 28px rgba(16,24,20,0.12); border-bottom: 6px dashed #C9D1CA">
+<div style="font-weight: 600; font-size: 15px; letter-spacing: 0.06em">FIGMA, INC.</div>
+<div style="color: #5A675F">Invoice INV-1 · 03 Sep 2026</div>
+<div style="height: 10px"></div>
+<div style="display: flex; justify-content: space-between"><span>Professional seat</span><span>12.00</span></div>
+<div style="display: flex; justify-content: space-between"><span>Tax</span><span>0.00</span></div>
+<div style="border-top: 1px dashed #5A675F; margin-top: 6px; padding-top: 6px; display: flex; justify-content: space-between; font-weight: 600"><span>TOTAL USD</span><span>12.00</span></div>
+</div>
+
+<div style="background: #FFFFFF; border: 1px solid #C9D1CA; border-radius: 6px; overflow-x: auto">
+<div style="min-width: 470px; font-family: 'IBM Plex Mono', monospace; font-size: 12.5px">
+<div style="display: flex; gap: 12px; padding: 10px 16px; background: #E2E8E1; color: #4A5750; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; font-size: 11px">
+<span style="width: 84px">Date</span><span style="width: 62px">Vendor</span><span style="width: 78px; text-align: right">Total</span><span style="width: 76px">Category</span><span style="flex: 1">Status</span>
+</div>
+<div style="display: flex; gap: 12px; align-items: center; padding: 10px 16px; border-top: 1px solid #E2E8E1">
+<span style="width: 84px">2026-09-03</span><span style="width: 62px">Figma</span><span style="width: 78px; text-align: right">USD 12.00</span><span style="width: 76px">Software</span><span style="flex: 1"><span style="background: #DDEFE4; color: #1E6B43; padding: 2px 8px; border-radius: 3px; font-weight: 500">filed</span></span>
+</div>
+<div style="display: flex; gap: 12px; align-items: center; padding: 10px 16px; border-top: 1px solid #E2E8E1">
+<span style="width: 84px">2026-09-10</span><span style="width: 62px">Uber</span><span style="width: 78px; text-align: right">INR 400.00</span><span style="width: 76px">Travel</span><span style="flex: 1"><span style="background: #F9E6C4; color: #7A4300; padding: 2px 8px; border-radius: 3px; font-weight: 500">totals don't add up</span></span>
+</div>
+<div style="display: flex; gap: 12px; align-items: center; padding: 10px 16px; border-top: 1px solid #E2E8E1">
+<span style="width: 84px">2026-09-03</span><span style="width: 62px">Figma</span><span style="width: 78px; text-align: right">USD 12.00</span><span style="width: 76px">Software</span><span style="flex: 1"><span style="background: #F9E6C4; color: #7A4300; padding: 2px 8px; border-radius: 3px; font-weight: 500">possible duplicate</span></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div style="background: #E2E8E1; padding: 72px 64px">
+<div style="max-width: 1152px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 40px">
+<div style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 26px; letter-spacing: -0.01em">Reads</h2>
+<p style="margin: 0; color: #2C3832">Drop in photos, scans or PDFs. A local vision model pulls out vendor, date, invoice number, currency, subtotal, tax, total and category.</p>
+</div>
+<div style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 26px; letter-spacing: -0.01em">Files</h2>
+<p style="margin: 0; color: #2C3832">Each receipt is copied to a month and category folder with a name you can search: date, vendor, amount. Your originals stay where they are.</p>
+</div>
+<div style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 26px; letter-spacing: -0.01em">Flags</h2>
+<p style="margin: 0; color: #2C3832">Missing fields, totals that don't add up and repeated receipts go to a review folder. The tool says when it isn't sure instead of guessing.</p>
+</div>
+</div>
+</div>
+
+<div id="output" style="padding: 88px 64px">
+<div style="max-width: 1152px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
+<div style="flex: 1 1 380px; min-width: 0; background: #101814; color: #D9E2DB; border-radius: 6px; padding: 28px; font-family: 'IBM Plex Mono', monospace; font-size: 14px; line-height: 1.8; overflow-x: auto; white-space: pre">sorted/
+  ledger.csv
+  2026-09/
+    Software/
+      2026-09-03_Figma_12.00.png
+    Travel/
+      ...
+  _needs_review/
+    2026-09-10_Uber_400.00.png</div>
+<div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 40px; line-height: 1.1; letter-spacing: -0.02em; text-wrap: balance">A folder your accountant can open.</h2>
+<p style="margin: 0; color: #2C3832">The ledger has one row per receipt, with the path to the filed copy. Run it every week on the same inbox: files already in the ledger are skipped by checksum, so nothing is read or filed twice.</p>
+</div>
+</div>
+</div>
+
+<div id="why" style="background: #101814; color: #E7EDE8; padding: 88px 64px">
+<div style="max-width: 1152px; margin: 0 auto; display: flex; flex-direction: column; gap: 44px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 44px; line-height: 1.08; letter-spacing: -0.02em; max-width: 720px; text-wrap: balance">Why it runs on your machine</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 40px">
+<div style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<h3 style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 16px; color: #9FB0FF">Client data stays put</h3>
+<p style="margin: 0; color: #C3CEC6">Invoices carry client names, rates and bank details. Many freelancers are under NDAs. Nothing is uploaded, and it works with the network off.</p>
+</div>
+<div style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<h3 style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 16px; color: #9FB0FF">No fee per page</h3>
+<p style="margin: 0; color: #C3CEC6">Hosted vision APIs bill by the page. Local inference costs nothing per receipt, so a busy month costs the same as a quiet one.</p>
+</div>
+<div style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<h3 style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 16px; color: #9FB0FF">Swap the model</h3>
+<p style="margin: 0; color: #C3CEC6">Any Ollama vision model works. Try a newer one the week it ships, or fine-tune for your own bills and edit the category list to match your books.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="start" style="padding: 88px 64px">
+<div style="max-width: 1152px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 56px">
+<div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 40px; line-height: 1.1; letter-spacing: -0.02em; text-wrap: balance">Three commands</h2>
+<p style="margin: 0; color: #2C3832">Install Ollama, pull a vision model, point the script at a folder. PDF receipts need one extra package. The default model is qwen2.5vl:7b.</p>
+</div>
+<div style="flex: 1 1 440px; min-width: 0; background: #FFFFFF; border: 1px solid #C9D1CA; border-radius: 6px; padding: 24px 28px; font-family: 'IBM Plex Mono', monospace; font-size: 14px; line-height: 1.9; overflow-x: auto; white-space: pre"><span style="color: #5A675F"># 1. open vision model</span>
+ollama pull qwen2.5vl:7b
+
+<span style="color: #5A675F"># 2. optional, for PDFs</span>
+pip install pymupdf
+
+<span style="color: #5A675F"># 3. sort a folder</span>
+python3 receiptsort.py ~/Downloads/receipts --out ~/receipts-sorted</div>
+</div>
+</div>
+
+<div id="pricing" style="background: #E2E8E1; padding: 88px 64px 96px">
+<div style="max-width: 1152px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 40px; line-height: 1.1; letter-spacing: -0.02em">Two ways to get it</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 24px">
+<div style="flex: 1 1 320px; min-width: 0; background: #FFFFFF; border: 1px solid #C9D1CA; border-radius: 6px; padding: 32px; display: flex; flex-direction: column; gap: 14px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #4A5750">Software</div>
+<div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 40px">[YOUR PRICE]</div>
+<p style="margin: 0; color: #2C3832">The script, updates, and the category list. For freelancers and small studios who can't send client invoices to a cloud API.</p>
+</div>
+<div style="flex: 1 1 320px; min-width: 0; background: #FFFFFF; border: 2px solid #2B3FD6; border-radius: 6px; padding: 32px; display: flex; flex-direction: column; gap: 14px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #2B3FD6">Setup service</div>
+<div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 40px">[YOUR PRICE]</div>
+<p style="margin: 0; color: #2C3832">We install it, match the categories to your books, and set the export for your accountant: Tally, Zoho or QuickBooks CSV.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div style="padding: 28px 64px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #4A5750">
+<span>receiptsort</span>
+<span>Runs on Ollama with open-weight vision models</span>
+</div>
+
+</div>
+
+</body>
+</html>
